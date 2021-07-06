@@ -6,7 +6,6 @@ body{
   margin: 0;
   color: rgb(47, 47, 45);
   animation: flow 20s;
-  background-color: rgb(237, 230, 211);
   cursor: pointer;
 }
 
@@ -32,6 +31,7 @@ img{
   animation: blur 5s ease 15s infinite;
  -webkit-animation: blur 5s ease 15s infinite;
  -moz-animation: blur 5s ease 15s infinite;
+ animation: flow2 5s ease;
 }
 
 .marquee3 {
@@ -41,6 +41,7 @@ img{
   animation: blur 6s ease 15s infinite;
  -webkit-animation: blur 6s ease 15s infinite;
  -moz-animation: blur 6s ease 15s infinite;
+ animation: flow2 7s ease;
 }
 
 .marquee4 {
@@ -50,6 +51,7 @@ img{
   animation: blur 7s ease 15s infinite;
  -webkit-animation: blur 7s ease 15s infinite;
  -moz-animation: blur 7s ease 15s infinite;
+ animation: flow2 10s ease;
 }
 
 .marquee5 {
@@ -59,6 +61,7 @@ img{
   animation: blur 9s ease 15s infinite;
  -webkit-animation: blur 9s ease 15s infinite;
  -moz-animation: blur 9s ease 15s infinite;
+ animation: flow2 15s ease;
 }
 
 .marquee6 {
@@ -68,6 +71,7 @@ img{
   animation: blur 10s ease 15s infinite;
  -webkit-animation: blur 10s ease 15s infinite;
  -moz-animation: blur 10s ease 15s infinite;
+ animation: flow2 20s ease;
 }
 
 button {
@@ -105,19 +109,19 @@ button:active {
   right: -400px;
   padding: 1.2rem;
   font-size: 1.2rem;
-  transition: right .4s ease;
+  transition: right 1s ease;
 }
 
 .box-styles2 {
-  background-color: rgb(100, 130, 39);
-  height: 100vh;
-  width: 400px;
+  background-color: black;
+  height: 500vh;
+  width: 5000px;
+  right: -5000px;
+  transition: right 5s ease;
   position: fixed;
   top: 0;
-  right: -400px;
   padding: 1.2rem;
   font-size: 1.2rem;
-  transition: right .4s ease;
 }
 
 .active {
@@ -134,9 +138,22 @@ button:active {
   }
 
   100% {
-    background-color: rgb(237, 230, 211); color: rgb(47, 47, 45);
+    color: rgb(47, 47, 45);
   }
 }
+
+@keyframes flow2 {
+  0% {color: white;
+  }
+
+  50% {color: white;
+  }
+
+  100% {
+    color: black;
+  }
+}
+
 
 @keyframes blur {
   0%,
@@ -151,6 +168,22 @@ button:active {
     -moz-filter: blur(20px);
     -o-filter: blur(20px);
     -ms-filter: blur(20px);
+}
+
+@keyframes blur2 {
+  0% {
+    -webkit-filter: blur(5000px);
+    -moz-filter: blur(5000vh0px);
+    -o-filter: blur(5000px);
+    -ms-filter: blur(5000px);
+    opacity: 0%;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -o-filter: blur(0px);
+    -ms-filter: blur(0px);
+    opacity: 100%;
   }
 }
 
