@@ -14,8 +14,7 @@ $('.marquee1').marquee({
 	direction: 'left',
 	//true or false - should the marquee be duplicated to show an effect of continues flow
 	duplicated: true,
-  pauseOnHover: true,
-  startVisible: true
+  pauseOnHover: true
 });
 
 $('.marquee2').marquee({
@@ -29,8 +28,7 @@ $('.marquee2').marquee({
 	direction: 'left',
 	//true or false - should the marquee be duplicated to show an effect of continues flow
 	duplicated: true,
-  pauseOnHover: true,
-  startVisible: true
+  pauseOnHover: true
 });
 
 $('.marquee3').marquee({
@@ -44,8 +42,7 @@ $('.marquee3').marquee({
 	direction: 'left',
 	//true or false - should the marquee be duplicated to show an effect of continues flow
 	duplicated: true,
-  pauseOnHover: true,
-  startVisible: true
+  pauseOnHover: true
 });
 
 $('.marquee4').marquee({
@@ -59,8 +56,7 @@ $('.marquee4').marquee({
 	direction: 'left',
 	//true or false - should the marquee be duplicated to show an effect of continues flow
 	duplicated: true,
-  pauseOnHover: true,
-  startVisible: true
+  pauseOnHover: true
 });
 
 $('.marquee5').marquee({
@@ -74,8 +70,7 @@ $('.marquee5').marquee({
 	direction: 'left',
 	//true or false - should the marquee be duplicated to show an effect of continues flow
 	duplicated: true,
-  pauseOnHover: true,
-  startVisible: true
+  pauseOnHover: true
 });
 
 $('.marquee6').marquee({
@@ -89,6 +84,5 @@ $('.marquee6').marquee({
 	direction: 'left',
 	//true or false - should the marquee be duplicated to show an effect of continues flow
 	duplicated: true,
-  pauseOnHover: true,
-  startVisible: true
+  pauseOnHover: true
 });
