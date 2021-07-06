@@ -17,7 +17,7 @@ img{
   /* the plugin works for responsive layouts so width is not necessary */
   overflow: scroll;
   font-size: 30px;
-  margin-top: 930px;
+  margin-top: 475px;
   animation: blur 4s ease 15s infinite;
  -webkit-animation: blur 4s ease 15s infinite;
  -moz-animation: blur 4s ease 15s infinite;
@@ -28,67 +28,77 @@ img{
   /* the plugin works for responsive layouts so width is not necessary */
   overflow: scroll;
   font-size: 50px;
-  animation: blur 5s ease 15s infinite;
- -webkit-animation: blur 5s ease 15s infinite;
- -moz-animation: blur 5s ease 15s infinite;
- animation: flow2 5s ease;
+  animation: blur 5s ease 15s infinite, flow2 5s ease;
 }
 
 .marquee3 {
   /* the plugin works for responsive layouts so width is not necessary */
   overflow: scroll;
   font-size: 80px;
-  animation: blur 6s ease 15s infinite;
- -webkit-animation: blur 6s ease 15s infinite;
- -moz-animation: blur 6s ease 15s infinite;
- animation: flow2 7s ease;
+  animation: blur 6s ease 15s infinite, flow2 7s ease, flow2 7s ease;
 }
 
 .marquee4 {
   /* the plugin works for responsive layouts so width is not necessary */
   overflow: scroll;
   font-size: 130px;
-  animation: blur 7s ease 15s infinite;
- -webkit-animation: blur 7s ease 15s infinite;
- -moz-animation: blur 7s ease 15s infinite;
- animation: flow2 10s ease;
+  animation: blur 7s ease 15s infinite, flow2 10s ease, flow2 10s ease;
 }
 
 .marquee5 {
   /* the plugin works for responsive layouts so width is not necessary */
   overflow: scroll;
   font-size: 200px;
-  animation: blur 9s ease 15s infinite;
- -webkit-animation: blur 9s ease 15s infinite;
- -moz-animation: blur 9s ease 15s infinite;
- animation: flow2 15s ease;
+  animation: blur 9s ease 15s infinite, flow2 13s ease, flow2 13s ease;
 }
 
 .marquee6 {
   /* the plugin works for responsive layouts so width is not necessary */
   overflow: scroll;
   font-size: 400px;
-  animation: blur 10s ease 15s infinite;
- -webkit-animation: blur 10s ease 15s infinite;
- -moz-animation: blur 10s ease 15s infinite;
- animation: flow2 20s ease;
+  animation: blur 10s ease 15s infinite,  flow2 17s ease, flow2 17s ease;
 }
 
 button {
-  background-color: rgb(171, 125, 222);
   font-size: 5rem;
-  border: 5px groove;
+  border: 5px groove rgb(47, 47, 45);
   border-radius: 20%;
   display: flex;
+  padding: 20px;
 }
 
 .button1 {
+  background-color: white;
+  color: rgb(47, 47, 45);
   display: flex;
-  margin: 0 auto;
-  justify-content: space-around;
-  align-items: flex-end;
+  margin: 0 auto 30px;
+  justify-content: space-between;
+  font-style: oblique;
+  font-size: 80px;
+}
+
+.button3 {
+  background-color: white;
+  color: rgb(128, 128, 128);
+  display: flex;
+  margin: 0 auto 30px;
+  justify-content: space-between;
+  font-style: oblique;
+  font-size: 80px;
 
 }
+
+.button2 {
+  background-color: rgb(47, 47, 45);
+  color: white;
+  display: flex;
+  margin: 0 auto 30px;
+  justify-content: space-between;
+  font-style: oblique;
+  font-size: 80px;
+  height: 142px;
+}
+
 
 button:hover{
   background-color: rgb(174, 205, 35);
@@ -96,36 +106,59 @@ button:hover{
 }
 
 button:active {
-  background-color: rgb(195, 50, 198);
+  background-color: rgb(255, 60, 33);
   cursor: grabbing;
 }
 
 .box-styles {
-  background-color: rgb(42, 150, 179);
-  height: 100vh;
-  width: 400px;
+  background-color: white;
+  height: 90vh;
+  width: 100%px;
   position: fixed;
   top: 0;
-  right: -400px;
+  right: -2000px;
   padding: 1.2rem;
-  font-size: 1.2rem;
+  font-size: 10rem;
   transition: right 1s ease;
+  text-align: center;
+  font-weight: bold;
+  height: 700px;
 }
 
 .box-styles2 {
   background-color: black;
-  height: 500vh;
+  height: 5000px;
   width: 5000px;
   right: -5000px;
-  transition: right 5s ease;
   position: fixed;
   top: 0;
-  padding: 1.2rem;
-  font-size: 1.2rem;
+}
+
+#box2{
+  animation: dose 4s linear;
+}
+
+.box-styles3 {
+  background-color: black;
+  height: 5000px;
+  width: 5000px;
+  right: -5000px;
+  position: fixed;
+  top: 0;
+}
+
+#box3{
+  animation: dose 3s infinite;
 }
 
 .active {
   right: 0px;
+}
+
+@keyframes dose {
+  0% {opacity: 0;}
+  70% {opacity: 0;}
+  100% {opacity: 100;}
 }
 
 @keyframes flow {
