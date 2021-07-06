@@ -4,8 +4,160 @@
 
 body{
   margin: 0;
+  color: rgb(47, 47, 45);
+  animation: flow 20s;
+  background-color: rgb(237, 230, 211);
+  cursor: pointer;
 }
 
 img{
   max-width: 100%;
 }
+
+.marquee1 {
+  /* the plugin works for responsive layouts so width is not necessary */
+  overflow: scroll;
+  font-size: 30px;
+  margin-top: 930px;
+  animation: blur 4s ease 15s infinite;
+ -webkit-animation: blur 4s ease 15s infinite;
+ -moz-animation: blur 4s ease 15s infinite;
+}
+
+
+.marquee2 {
+  /* the plugin works for responsive layouts so width is not necessary */
+  overflow: scroll;
+  font-size: 50px;
+  animation: blur 5s ease 15s infinite;
+ -webkit-animation: blur 5s ease 15s infinite;
+ -moz-animation: blur 5s ease 15s infinite;
+}
+
+.marquee3 {
+  /* the plugin works for responsive layouts so width is not necessary */
+  overflow: scroll;
+  font-size: 80px;
+  animation: blur 6s ease 15s infinite;
+ -webkit-animation: blur 6s ease 15s infinite;
+ -moz-animation: blur 6s ease 15s infinite;
+}
+
+.marquee4 {
+  /* the plugin works for responsive layouts so width is not necessary */
+  overflow: scroll;
+  font-size: 130px;
+  animation: blur 7s ease 15s infinite;
+ -webkit-animation: blur 7s ease 15s infinite;
+ -moz-animation: blur 7s ease 15s infinite;
+}
+
+.marquee5 {
+  /* the plugin works for responsive layouts so width is not necessary */
+  overflow: scroll;
+  font-size: 200px;
+  animation: blur 9s ease 15s infinite;
+ -webkit-animation: blur 9s ease 15s infinite;
+ -moz-animation: blur 9s ease 15s infinite;
+}
+
+.marquee6 {
+  /* the plugin works for responsive layouts so width is not necessary */
+  overflow: scroll;
+  font-size: 400px;
+  animation: blur 10s ease 15s infinite;
+ -webkit-animation: blur 10s ease 15s infinite;
+ -moz-animation: blur 10s ease 15s infinite;
+}
+
+button {
+  background-color: rgb(171, 125, 222);
+  font-size: 5rem;
+  border: 5px groove;
+  border-radius: 20%;
+  display: flex;
+}
+
+.button1 {
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-around;
+  align-items: flex-end;
+
+}
+
+button:hover{
+  background-color: rgb(174, 205, 35);
+  cursor: grab;
+}
+
+button:active {
+  background-color: rgb(195, 50, 198);
+  cursor: grabbing;
+}
+
+.box-styles {
+  background-color: rgb(42, 150, 179);
+  height: 100vh;
+  width: 400px;
+  position: fixed;
+  top: 0;
+  right: -400px;
+  padding: 1.2rem;
+  font-size: 1.2rem;
+  transition: right .4s ease;
+}
+
+.box-styles2 {
+  background-color: rgb(100, 130, 39);
+  height: 100vh;
+  width: 400px;
+  position: fixed;
+  top: 0;
+  right: -400px;
+  padding: 1.2rem;
+  font-size: 1.2rem;
+  transition: right .4s ease;
+}
+
+.active {
+  right: 0px;
+}
+
+@keyframes flow {
+  0% {
+    background-color: white; color: black;
+  }
+
+  50% {
+    background-color: white; color: black;
+  }
+
+  100% {
+    background-color: rgb(237, 230, 211); color: rgb(47, 47, 45);
+  }
+}
+
+@keyframes blur {
+  0%,
+  99% {
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -o-filter: blur(0px);
+    -ms-filter: blur(0px);
+  }
+  50% {
+    -webkit-filter: blur(20px);
+    -moz-filter: blur(20px);
+    -o-filter: blur(20px);
+    -ms-filter: blur(20px);
+  }
+}
+
+filter: blur(3px);
+-webkit-filter: blur(3px);
+-moz-filter: blur(3px);
+-o-filter: blur(3px);
+-ms-filter: blur(3px);
+filter: url(blur.svg#blur);
+filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='3');
