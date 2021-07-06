@@ -5,7 +5,7 @@
 */
 $('.marquee1').marquee({
 	//duration in milliseconds of the marquee
-	duration: 15000,
+	duration: 20000,
 	//gap in pixels between the tickers
 	gap: 50,
 	//time in milliseconds before the marquee will start animating
@@ -20,7 +20,7 @@ $('.marquee1').marquee({
 
 $('.marquee2').marquee({
 	//duration in milliseconds of the marquee
-	duration: 14000,
+	duration: 13500,
 	//gap in pixels between the tickers
 	gap: 50,
 	//time in milliseconds before the marquee will start animating
